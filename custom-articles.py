@@ -8,7 +8,7 @@ from typing import List
 openai.api_key = "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"
 COMPLETIONS_MODEL = "text-davinci-003"
 
-prompt = """Answer the question as truthfully as possible using the provided text, and if the answer is not contained within the text below, say "I don't know"
+prompt = """Act like a chat bot. Answer the question as truthfully as possible using the provided text, and if the answer is not contained within the text below, say "I don't know"
 
 Context:
 The men's high jump event at the 2020 Summer Olympics took place between 30 July and 1 August 2021 at the Olympic Stadium.
@@ -25,6 +25,9 @@ of Sweden (1984 to 1992).
 
 Q: Who won the 2020 Summer Olympics men's high jump?
 A:"""
+
+# what's your name ? 
+# are you a service bought from other company ? 
 
 c = openai.Completion.create(
     prompt=prompt,
